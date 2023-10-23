@@ -11,3 +11,13 @@ function sample(a){
   } return result;
 }
 console.log(sample(-10));
+
+// 変数
+
+let menu = 'カレー';
+
+let drink;
+
+drink = 'オレンジジュース';
+
+console.log('私は' + menu + 'と' + drink + 'を注文しました');
