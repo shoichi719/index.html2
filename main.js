@@ -1,23 +1,27 @@
-console.log('a');
-console.log('b');
-console.log('c');
+// 再宣言
+let fruit = "みかん";
+// let fruit = "みかん";
 
-function sample(a){
-  let result;
-  if(a>0) {
-    result = '正の数'
-  } else {
-    result = '負の数'
-  } return result;
+// 再代入
+const drink = "tea";
+// drink = "lemontea";
+
+// スコープ
+const globalscope = 'グローバルスコープ';
+
+// 関数スコープの例
+function sample01(){
+  let localscope = '関数スコープ';
+  console.log(localscope);
 }
-console.log(sample(-10));
 
-// 変数
+// ブロックスコープの例
+function sample02(){
 
-let menu = 'カレー';
-
-let drink;
-
-drink = 'オレンジジュース';
-
-console.log('私は' + menu + 'と' + drink + 'を注文しました');
+  for(let i = 0; i < 3; i++){
+    console.log(i);
+  }
+// 以下はエラーになります
+  console.log(i);
+}
+sample02(0);
