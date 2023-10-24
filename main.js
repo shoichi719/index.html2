@@ -1,27 +1,15 @@
-// 再宣言
-let fruit = "みかん";
-// let fruit = "みかん";
+// 関数の基本書式
+console.log('好きな果物はなんですか？');
 
-// 再代入
-const drink = "tea";
-// drink = "lemontea";
+function sample01(a){
 
-// スコープ
-const globalscope = 'グローバルスコープ';
+      if (a == 'りんご'){
+        let apple = '私もりんごが好きです！';
+        console.log(apple);
+      }else{
+        let other = a + 'が好きなのですね。';
+        console.log(other);
 
-// 関数スコープの例
-function sample01(){
-  let localscope = '関数スコープ';
-  console.log(localscope);
-}
-
-// ブロックスコープの例
-function sample02(){
-
-  for(let i = 0; i < 3; i++){
-    console.log(i);
-  }
-// 以下はエラーになります
-  console.log(i);
-}
-sample02(0);
+      };
+};
+sample01('ブドウ');
